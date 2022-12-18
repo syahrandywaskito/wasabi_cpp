@@ -75,19 +75,17 @@ void proses(int nilaiAwal, char operatorProses, int nilaiAkhir){
 	else if (operatorProses == '*'){
 		hasilOperasi = nilaiAwal * nilaiAkhir;
 	}
-	// program akan selesai saat kondisi pembagian selesai diekseskusi
+	// variabel alert untuk memberitahu bahwa penghitungan tidak valid
 	else if (operatorProses == '/'){
 		if ((nilaiAwal == 0)&&(nilaiAkhir == 0)){
-			cout << "0 / 0 tidak valid" << endl;
+			hasilOperasi = 001; // kode 001 untuk tidak valid
 		}
 		else if ((nilaiAwal != 0)&&(nilaiAkhir == 0)){
-			cout << nilaiAwal << " / " << nilaiAkhir << " tidak terdefinisi" << endl;
+			hasilOperasi = 002; // kode 002 untuk tidak terdefinisi 
 		}
-		else{
-			cout << nilaiAwal << " / " << nilaiAkhir << " = " << nilaiAwal / nilaiAkhir << endl;	
+		else if ((nilaiAwal != 0)&&(nilaiAkhir != 0)){
+			hasilOperasi = nilaiAwal / nilaiAkhir;
 		}
-		// setelah proses selesai akan kembali ke funsi input()
-		input();
 	}
 	else if (operatorProses == '%'){
 		hasilOperasi = nilaiAwal % nilaiAkhir;
@@ -104,8 +102,16 @@ void proses(int nilaiAwal, char operatorProses, int nilaiAkhir){
 // fungsi output untuk menampilkan hasil pada console
 void output(int nilaiAwal, int nilaiAkhir, int hasilOperasi, char operatorProses){
 
-	// menampilkan output dari semua data ke console
-	cout << nilaiAwal << operatorProses << nilaiAkhir << " = " << hasilOperasi << endl;
+	if (hasilOperasi == 001){
+			cout << "Tidak Valid" << endl;
+	}
+	else if (hasilOperasi == 002){
+			cout << nilaiAwal << " / " << nilaiAkhir << " Tidak Terdefinisi" << endl;
+	}
+	else{
+		// menampilkan output dari semua data ke console
+		cout << nilaiAwal << operatorProses << nilaiAkhir << " = " << hasilOperasi << endl;
+	}
 
 	// akan kembali ke fungsi input()
 	input();
