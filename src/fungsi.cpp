@@ -1,9 +1,8 @@
 #include <iostream>
 #include <cstdlib> // libary untuk return EXIT_SUCCESS dan EXIT_FAILURE
-using namespace std;
 
-string greeting(){
-	string greeting{"Hello, have a great day!"};
+std::string greeting(){
+	std::string greeting{"Hello, have a great day!"};
 	return greeting; // akan mengembalikan nilai dari variabel greeting
 }
 // fungsi untuk menambah dua operand 
@@ -14,12 +13,12 @@ int tambah(int a, int b){
 
 int main(){
 	// output greeting function
-	cout << greeting() << "\n"; // menampilkan nilai dari fungsi greeting()
+	std::cout << greeting() << "\n"; // menampilkan nilai dari fungsi greeting()
 
 	// variabel input operand
 	int x{}, y{};
-	cout << "input operand\n";
-	cin >> x >> y;
-	cout << x << " + " << y << " = " << tambah(x, y) << endl; // argumen dari fungsi tambah() adalah input
+	std::cout << "input operand\n";
+	std::cin >> x >> y;
+	std::cout << x << " + " << y << " = " << tambah(x, y) << std::endl; // argumen dari fungsi tambah() adalah input
 	return EXIT_SUCCESS; // sama dengan return 0
 }
