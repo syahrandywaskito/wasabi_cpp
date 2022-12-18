@@ -16,15 +16,48 @@
 using namespace std;
 
 void input();
+void output(int nilaiAwal, int nilaiAkhir, int hasilOperasi, char operatorProses);
+void proses(int nilaiAwal, char operatorProses, int nilaiAkhir);
+void help();
 
-// fungsi output untuk menampilkan hasil pada console
-void output(int nilaiAwal, int nilaiAkhir, int hasilOperasi, char operatorProses){
+int main(){
 
-	// menampilkan output dari semua data ke console
-	cout << nilaiAwal << operatorProses << nilaiAkhir << " = " << hasilOperasi << endl;
+	// Header awal saat program dieksekusi
+	cout << "\nSIMPLE CALCULATOR WITH C++\n";
+	cout << "Sebuah kalkulator sederhana yang dibuat dengan C++\n";
+	cout << "Melihat informasi operator (Y/N)?";
 
-	// akan kembali ke fungsi input()
-	input();
+	// variabel question
+	char question{};
+	cin >> question;
+
+	// pemilihan fungsi help() dan calc()
+	if (question == 'y'||question == 'Y'){
+		help();
+	}
+	else if(question == 'n' || question == 'N'){
+		input();
+	}
+	else{
+		cout << "Command doesn't valid, please enter valid command again!" << endl;
+		main();
+	}
+	return EXIT_SUCCESS;
+}
+
+void input(){
+
+	// input dan output
+	cout << "\n~~ Calculator ~~\n";
+	cout << "Masukkan bilangan pertama dan kedua, serta Operatornya\n";
+	
+	// Deklarasi variabel
+	int x{}, y{}; 
+	char opr{};
+	cout <<  ">"; cin >> x >> opr >> y;
+
+	// penggunaan fungsi proses()
+	proses(x, opr, y);
 }
 
 // fungsi untuk proses aplikasi kalkulator
@@ -68,6 +101,16 @@ void proses(int nilaiAwal, char operatorProses, int nilaiAkhir){
 	output(nilaiAwal, nilaiAkhir, hasilOperasi, operatorProses);
 }
 
+// fungsi output untuk menampilkan hasil pada console
+void output(int nilaiAwal, int nilaiAkhir, int hasilOperasi, char operatorProses){
+
+	// menampilkan output dari semua data ke console
+	cout << nilaiAwal << operatorProses << nilaiAkhir << " = " << hasilOperasi << endl;
+
+	// akan kembali ke fungsi input()
+	input();
+}
+
 // fungsi yang berisi help dari setiap operator
 void help(){
 	cout << "\n~~ Help ~~\n";
@@ -97,45 +140,4 @@ void help(){
 		cout << "Invalid command, please input again!\n";
 		help();
 	}
-}
-
-
-int main(){
-
-	// Header awal saat program dieksekusi
-	cout << "\nSIMPLE CALCULATOR WITH C++\n";
-	cout << "Sebuah kalkulator sederhana yang dibuat dengan C++\n";
-	cout << "Melihat informasi operator (Y/N)?";
-
-	// variabel question
-	char question{};
-	cin >> question;
-
-	// pemilihan fungsi help() dan calc()
-	if (question == 'y'||question == 'Y'){
-		help();
-	}
-	else if(question == 'n' || question == 'N'){
-		input();
-	}
-	else{
-		cout << "Command doesn't valid, please enter valid command again!" << endl;
-		main();
-	}
-	return EXIT_SUCCESS;
-}
-
-void input(){
-
-	// input dan output
-	cout << "\n~~ Calculator ~~\n";
-	cout << "Masukkan bilangan pertama dan kedua, serta Operatornya\n";
-	
-	// Deklarasi variabel
-	int x{}, y{}; 
-	char opr{};
-	cout <<  ">"; cin >> x >> opr >> y;
-
-	// penggunaan fungsi proses()
-	proses(x, opr, y);
 }
