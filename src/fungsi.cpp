@@ -2,6 +2,7 @@
 #include <cstdlib> // libary untuk return EXIT_SUCCESS dan EXIT_FAILURE
 using namespace std;
 
+// tipe data string termasuk ke namespace std;
 string greeting(){
 	string greeting{"Hello, have a great day!"};
 	return greeting; // akan mengembalikan nilai dari variabel greeting
