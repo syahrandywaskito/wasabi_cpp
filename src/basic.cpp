@@ -1,7 +1,10 @@
 #include <iostream>
-using namespace std;
+
+// macro directive
+#define MY_AGE 18
 
 int main(){
-	cout << "basic cpp" << endl;
+	std::cout << "basic cpp\n";
+	std::cout << "My Age is : " << MY_AGE << std::endl;
 	return 0;
 }
