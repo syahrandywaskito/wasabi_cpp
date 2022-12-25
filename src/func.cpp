@@ -9,7 +9,7 @@ void fungsivoid(){
 	cout << "tekan y untuk menampilkan Output, n untuk tidak menampilkan Output : ";
 	cin >> answer;
 	if (answer == 'n' || answer == 'N'){
-		return;
+		return; // early return jika kondisi berjalan 
 	}
 	else{
 		cout << "Output\n";	

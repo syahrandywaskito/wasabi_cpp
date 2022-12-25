@@ -9,9 +9,7 @@ int main(int argc, char const *argv[])
 	return 0;
 }
 
-void day(hari){
-	string hari = "";
-	switch(hari){
-		case: 
-	}
+void day(string hari){
+
+	
 }
