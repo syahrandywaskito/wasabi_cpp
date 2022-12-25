@@ -5,3 +5,5 @@
 */
 
 int areaTriangle(int base, int height);
+int aroundTriangle(int side1, int side2, int side3);
+int areaSquare(int side);
