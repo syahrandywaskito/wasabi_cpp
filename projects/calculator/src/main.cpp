@@ -10,9 +10,8 @@
 	~~Wasabi~~
 */
 
-#include "calc.h"
+#include "standard_calculation.h"
 #include <iostream>
-#include <math.h>
 #include <cstdlib>
 
 
@@ -32,11 +31,12 @@ int main(){
 		help();
 	}
 	else if(question == 'n' || question == 'N'){
-		input();
+		inputNumber();
 	}
 	else{
 		std::cout << "Command doesn't valid, please enter valid command again!" << std::endl;
 		main();
 	}
+
 	return EXIT_SUCCESS;
 }
