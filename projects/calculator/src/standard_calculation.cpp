@@ -2,10 +2,6 @@
 #include <iostream>
 
 void inputNumber(){
-
-	// input dan output
-	// std::cout << "\n~~ Calculator ~~\n";
-	// std::cout << "Masukkan bilangan pertama dan kedua, serta Operatornya\n";
 	
 	// Deklarasi variabel
 	int num1{}, num2{}; 
@@ -55,7 +51,7 @@ int power(int num1, int num2){
 	
 }
 
-// 
+// Output Value from calculation function
 void outputValue(int num1, char operatorProses, int num2){
 	switch (operatorProses){
 	case '+':
