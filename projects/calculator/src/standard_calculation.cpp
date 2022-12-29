@@ -64,7 +64,15 @@ void outputValue(int num1, char operatorProses, int num2){
 		std::cout << multiplied(num1, num2) << std::endl;
 		break;
 	case '/':
-		std::cout << divided(num1, num2) << std::endl;
+		if (divided(num1, num2) == 10){
+			std::cout << "Invalid\n";
+		}
+		else if (divided(num1, num2) == 11){
+			std::cout << "Undefined\n";
+		}
+		else{
+			std::cout << divided(num1, num2) << std::endl;
+		}
 		break;
 	case '%':
 		std::cout << modulation(num1, num2) << std::endl;
