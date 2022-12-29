@@ -13,6 +13,4 @@ int divided(int num1, int num2);
 int modulation(int num1, int num2);
 int power(int num1, int num2);
 
-void help();
-
 #endif

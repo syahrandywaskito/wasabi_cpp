@@ -11,6 +11,7 @@
 */
 
 #include "standard_calculation.h"
+#include "help.h"
 #include <iostream>
 #include <cstdlib>
 
