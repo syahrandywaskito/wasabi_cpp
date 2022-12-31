@@ -1,4 +1,5 @@
 #include "help.h"
+#include "control.h"
 #include "standard_calculation.h"
 #include <iostream>
 
