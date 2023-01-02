@@ -10,16 +10,15 @@ void inputNumber(){
 	char opr{};
 	std::cout <<  "> "; std::cin >> num1 >> opr >> num2;
 
-	// penggunaan fungsi proses()
 	outputValue(num1, opr, num2);
 }
 
 // Output Value from calculation function
 void outputValue(int num1, char operatorProses, int num2){
 	switch (operatorProses){
-    case 'h':
-        help();
-        break;
+	case 'h':
+	 	help();
+		break;
 	case '+':
 		std::cout << addition(num1, num2) << std::endl;
 		break;
