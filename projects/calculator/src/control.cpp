@@ -9,16 +9,19 @@ void inputNumber(){
 	int num1{}, num2{}; 
 	char opr{};
 	std::cout <<  "> "; std::cin >> num1 >> opr >> num2;
+	if (num1 == 001){
+		help();
+	}
 
-	outputValue(num1, opr, num2);
+	else if (num1 != 001){
+		outputValue(num1, opr, num2);
+	}
+	
 }
 
 // Output Value from calculation function
 void outputValue(int num1, char operatorProses, int num2){
 	switch (operatorProses){
-	case 'h':
-	 	help();
-		break;
 	case '+':
 		std::cout << addition(num1, num2) << std::endl;
 		break;
@@ -46,7 +49,7 @@ void outputValue(int num1, char operatorProses, int num2){
 		std::cout << power(num1, num2) << std::endl;
 		break;
 	default:
-		std::cout << "Error!!" << std::endl;
+		std::cout << "program ended!!" << std::endl;
 	}
 	
 	inputNumber();
