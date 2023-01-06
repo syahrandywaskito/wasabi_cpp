@@ -9,13 +9,8 @@ void inputNumber(){
 	int num1{}, num2{}; 
 	char opr{};
 	std::cout <<  "> "; std::cin >> num1 >> opr >> num2;
-	if (num1 == 001){
-		help();
-	}
-
-	else if (num1 != 001){
+	
 		outputValue(num1, opr, num2);
-	}
 	
 }
 
