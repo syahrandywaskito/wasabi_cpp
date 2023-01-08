@@ -4,6 +4,8 @@
  * Fungsi dari cerr biasanya digunakan untuk membedakan sebuah output.
  * Output yang dibedakan adalah output untuk proses debug. 
  * Penulisan std::cerr tanpa indentasi pada sebuah fungsi.
+ * 
+ * "PROGRAM AKAN DIBIARKAN SALAH"
 */
 
 
