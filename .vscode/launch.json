@@ -4,7 +4,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "C:/Users/WINDOWS 10/Documents/code/git-cpp/exe/basic.exe",
+            "program": "C:/Users/WINDOWS 10/Documents/code/git-cpp/exe/lingkaran.exe",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${fileDirname}",
