@@ -47,3 +47,10 @@ int main(int argc, char const *argv[])
   std::cout << type << " range start : " << result_start << " to " << result_end << std::endl;
   return 0;
 }
+
+/**
+ * rumus untuk sign dan unsign
+ * rumus range all : 2^n (n = jumlah bit tipe data)
+ * rumus range signed : -2^n-1 to (2^n-1)-1
+ * rumus range unsigned : 0 to (2^n)-1 
+*/

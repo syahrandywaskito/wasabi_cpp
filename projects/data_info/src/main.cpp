@@ -1,8 +1,3 @@
-/**
- * This project tell about Data Type.
- * Information  contain :
- * Size, Data Information, Using, and more
-*/
 
 #include "size.h"
 #include <iostream>
