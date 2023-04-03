@@ -19,8 +19,41 @@ int main(int argc, char const *argv[])
 
   if (type == "short")
   {
-    int short_size = sizeof(short);
-    int bit_size = 8 * short_size;
+    int type_size = sizeof(short);
+    int bit_size = 8 * type_size;
+    int short_range_all = pow(2, bit_size);
+    int short_range_start = -(pow(2, bit_size - 1));
+    int short_range_end = pow(2, bit_size - 1) - 1;
+    result_all = short_range_all;
+    result_start = short_range_start;
+    result_end = short_range_end;
+  }
+  else if (type == "int")
+  {
+    int type_size = sizeof(int);
+    int bit_size = 8 * type_size;
+    int short_range_all = pow(2, bit_size);
+    int short_range_start = -(pow(2, bit_size - 1));
+    int short_range_end = pow(2, bit_size - 1) - 1;
+    result_all = short_range_all;
+    result_start = short_range_start;
+    result_end = short_range_end;
+  }
+  else if (type == "float")
+  {
+    int type_size = sizeof(float);
+    int bit_size = 8 * type_size;
+    int short_range_all = pow(2, bit_size);
+    int short_range_start = -(pow(2, bit_size - 1));
+    int short_range_end = pow(2, bit_size - 1) - 1;
+    result_all = short_range_all;
+    result_start = short_range_start;
+    result_end = short_range_end;
+  }
+  else if (type == "double")
+  {
+    int type_size = sizeof(double);
+    int bit_size = 8 * type_size;
     int short_range_all = pow(2, bit_size);
     int short_range_start = -(pow(2, bit_size - 1));
     int short_range_end = pow(2, bit_size - 1) - 1;
@@ -30,8 +63,8 @@ int main(int argc, char const *argv[])
   }
   else if (type == "un_short")
   {
-    int data_size = sizeof(unsigned short);
-    int bit_size = 8 * data_size;
+    int type_size = sizeof(unsigned short);
+    int bit_size = 8 * type_size;
     int data_range_all = pow(2, bit_size);
     int data_range_start {0};
     int data_range_end = pow(2, bit_size) - 1;
