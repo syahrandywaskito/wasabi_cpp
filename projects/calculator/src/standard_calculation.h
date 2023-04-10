@@ -6,7 +6,7 @@
 int addition(int num1, int num2);
 int subtraction(int num1, int num2);
 int multiplied(int num1, int num2);
-int divided(int num1, int num2);
+float divided(float num1, float num2);
 int modulation(int num1, int num2);
 int power(int num1, int num2);
 

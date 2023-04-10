@@ -28,5 +28,17 @@ int main(int argc, char const *argv[])
   std::cout << "5.0 / 0.0 = " << 5.0 / 0.0 << "\n";
   std::cout << "-5.0 / 0.0 = " << -5.0 / 0.0 << "\n";
 
+  int x{0}, y{0};
+  std::cout << "input nilai pembagian : "; std::cin >> x >> y;
+
+  float result{(float)x / (float)y};
+  std::cout << "Hasil : " << result << "\n";  
+
   return 0;
 }
+
+/**
+ * NaN dan Infinity hanya bisa meuncul jika tipe data yang digunakan adalah 
+ * tipe data bilangan real yaitu float, double, long double
+ * jika menggunakan integer, hasil dari NaN dan Infinity tidak akan keluar 
+*/
