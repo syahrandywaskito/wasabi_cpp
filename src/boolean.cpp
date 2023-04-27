@@ -32,3 +32,9 @@ int main(int argc, char const *argv[])
   
   return 0;
 }
+
+/**
+ * Penggunaan iomanip dapat dilakukan untuk memanipulasi input dan output
+ * Untuk output menggunakan statement std::cout
+ * Untuk input menggunakan statement std::cin
+*/
