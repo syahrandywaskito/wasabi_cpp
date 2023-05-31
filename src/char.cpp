@@ -1,3 +1,13 @@
+/**
+ * Program untuk mengetahui ASCII CODE dari setiap Char
+ * Command / Input :
+ * 0 = Untuk menampilkan semua list ASCII CODE dari 0 - 127
+ * Karakter Keyboard : menampilkan ASCII CODE nya langsung, 
+ * contohnya jika kita input v, maka akan tampil
+ * Char       ASCII CODE
+ * V          86
+*/
+
 #include <iostream>
 
 int main(int argc, char const *argv[])

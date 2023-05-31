@@ -1,3 +1,19 @@
+/**
+ * ESCAPE SEQUENCE
+ * 
+ * Escape sequence adalah sebuah simbol backslash yang diikuti dengan
+ * karakter tertentu. 
+ * 
+ * Escape sequence memiliki fungsi masing masing sesuai dengan karakter-nya
+ * salah satu contohnya adalah escape sequence \n. yang berfungsi untuk
+ * membuat baris baru.
+ * 
+ * Escape sequence ditulis di dalam string, jadi jika ingin menggunakan 
+ * escape sequence harus menuliskan petik dua ("") atau petik satu ('')
+ * 
+*/
+
+
 #include <iostream>
 
 int main(int argc, char const *argv[])

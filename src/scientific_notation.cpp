@@ -1,6 +1,15 @@
-#include <iostream>
+/**
+ * Scientific Notation
+ * 
+ * Scientific notation merupakan sebuah notasi sains yang digunakan
+ * untuk menuliskan bilangan yang jumlahnya sangat besar atapun jumlahnya
+ * sangat kecil
+ * 
+*/
+
 #include <typeinfo>
 #include <iomanip>
+#include <iostream>
 
 
 int main(int argc, char const *argv[])

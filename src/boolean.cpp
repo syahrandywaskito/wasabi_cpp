@@ -1,3 +1,31 @@
+/**
+ * Boolean course
+ * Membahas bagaiamana tipe data boolean bekerja
+ * Tipe data boolean terdiri dari dua nilai yaitu 
+ * TRUE (1) : pernyaataan benar / pernyataan jika bernilai benar
+ * FALSE (0) : pernyataan salah / pernyataan jika bernilai salah
+ * 
+ * Pada boolean dapat menggunakan nilai lebih dari satu untuk
+ * menunjukan bahwa pernyataan tersebut benar
+ * 
+ * contoh : 
+ * bool str{2}; -> pernyataan akan bernilai benar (lebih baik menggunakan 1 dan 0 saja untuk numbernya)
+ * 
+ * cara untuk merubah pernyaataan number menjadi string dapat menggunakan iomanip header 
+ * iomanip header berisisi sebuah statement untuk merubah/memanipulasi input dan output
+ * 
+ * iomanip untuk boolean :
+ * std::boolalpha = digunakan untuk merubah bool number menjadi string
+ *                  1 => true
+ * std::noboolalpha = digunakan untuk merubah bool string menjadi number (!boolalpha)
+ *                  false => 0
+ * 
+ * Boolean biasanya digunakan pada conditional statement dan pada perbandingan
+ * boolean juga digunakan di loop contohnya adalah WHILE
+ * pada WHILE selama kondisi bernilai true makan perulangan akan terus berjalan
+*/
+
+
 #include <iostream>
 
 
@@ -23,7 +51,7 @@ int main(int argc, char const *argv[])
   std::cout << std::boolalpha;
   std::cout << "Kondisi bernilai : " << kondisi_3 << "\n";
 
-  std::cout << std::noboolalpha;
+  std::cout << std::boolalpha;
   std::cout << "Kondisi bernilai : " << !kondisi_3 << "\n";
 
   std::cout << "Kondisi bernilai : " << int_bool_1 << "\n";
