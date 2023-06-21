@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
     std::cout << "ASCII Code" << "\tSymbol\n";
     for (int count = 0; count <= 127; count++)
     {
-      char ascii_code{(char)count};
+      char ascii_code{static_cast<char>(count)};
       if (count <= 31)
       {
         std::cout << count << "*" << "\t\t" << ascii_code << '\n';     
@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
   else
   {
     std::cout << "Char Symbol" << "\tASCII Code\n";
-    std::cout << char_symbol << "\t\t" << int(char_symbol) << '\n';
+    std::cout << char_symbol << "\t\t" << static_cast<int>(char_symbol) << '\n';
   }
   
   // char ch{};

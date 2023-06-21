@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
   std::cout << "float point : " << 5.0f << "\n";
 
   // io manipulation
-  std::cout << std::setprecision(17);
+  std::cout << std::setprecision(4);
   std::cout << 1234556789011.45f << "\n"; // otomatis akan dikonversi menjadi scientific notation
   std::cout << 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 << "\n";
 
