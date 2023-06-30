@@ -13,6 +13,8 @@
  * Ciri-ciri run-time constant adalah valuenya dipengaruhi dari luar seperti value constant dari value
  * variabel non-constant
  * 
+ * Variabel yang di deklarasi dengan constant exprr dapat digunakan di dalam constant exprr juga
+ * 
 */
 
 
