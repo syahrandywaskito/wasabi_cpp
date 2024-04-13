@@ -1,6 +1,6 @@
 /**
  * Boolean course
- * Membahas bagaiamana tipe data boolean bekerja
+ * Membahas bagaimana tipe data boolean bekerja
  * Tipe data boolean terdiri dari dua nilai yaitu 
  * TRUE (1) : pernyaataan benar / pernyataan jika bernilai benar
  * FALSE (0) : pernyataan salah / pernyataan jika bernilai salah

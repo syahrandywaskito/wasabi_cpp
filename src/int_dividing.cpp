@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
   float result{};
   std::cout << "Input 1 : "; std::cin >> operand1;
   std::cout << "Input 2 : "; std::cin >> operand2;
-  result = (float)operand1 / (float)operand2;
+  result = static_cast<float>(operand1) / static_cast<float>(operand2);
 
   // output 
   std::cout << "Divided Result is " << result << std::endl; 
