@@ -23,7 +23,12 @@
 #include <iostream>
 #include <type_traits>
 
-consteval int lessthan(int x, int y);
+// consteval int lessthan(int x, int y)
+// {
+//   return (x < y) ? x : y;
+// }
+
+// constexpr auto terserah(auto acak);
 
 constexpr int greater(int x, int y)
 {
@@ -63,6 +68,7 @@ int main(int argc, char const *argv[])
   constexpr int g {greater(x, y)};
   // constexpr int is_constant {isConstant()};
 
+  // std::cout << terserah(30) << '\n';
   std::cout << constant_expr << '\n';
   std::cout << constant_std << '\n';
   std::cout << const_z << '\n';
@@ -75,7 +81,7 @@ int main(int argc, char const *argv[])
   return 0;
 }
 
-constexpr int lessthan(int x, int y)
-{
-  return (x < y) ? x : y;
-}
+// constexpr auto terserah(auto acak) 
+// {
+//   return acak;
+// }
